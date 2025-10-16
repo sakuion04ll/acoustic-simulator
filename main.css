@@ -1,0 +1,52 @@
+/* style.css */
+body {
+  text-align: center;
+  background-color: #e0e0e0;
+  font-family: sans-serif;
+}
+
+canvas {
+  z-index: 1;
+  border: 2px solid #333;
+}
+
+.main-container{
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.side-panel {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px; /* 固定幅でもOK */
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.setting{
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.how{
+  padding-top: 40px;
+  border-radius: 5px;
+}
+
+
+h4{
+  margin-top: 4px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+h6 {
+  display: flex;
+  text-align: left;         
+  font-weight: normal;      
+  font-size: 16px;          
+  margin-top: 0;
+}

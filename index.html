@@ -1,0 +1,52 @@
+<!DOCTYPE HTML> 
+<html lang="ja"> 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>2次元音響シミュレーション</title>      
+    <link rel="stylesheet" href="main.css" type="text/css"> 
+
+  </head>
+  <body>
+  <h1>2次元音響シミュレーション</h1>
+
+  <div class="main-container">
+    <canvas id="canvas" width="1100" height="720"></canvas>
+
+    <div class="side-panel">
+      <div class = "setting">
+        <h4>設定</h4>
+        <label>　壁の数：<input type="number" id="wallCount" min="1" max="10" value="3"></label>
+        <button onclick="generateWalls()">壁を作成</button><br><br>
+
+        <label for="volumeRange">　　音量：</label>
+        <input type="range" id="volumeRange" min="2" max="100" value="30">
+        <span id="volumeValue">30</span><br><br>
+
+        <label for="angleSlider">音の向き：</label>
+        <input type="range" id="angleSlider" min="0" max="360" value="0">
+        <span id="angleValue">0</span><br><br>
+
+        <label for="aimSlider">　指向性：</label>
+        <input type="range" id="aimSlider" min="1" max="180" value="30">
+        <span id="aimValue">30</span><br><br>     
+      </div>
+        <h4><button id="hiddenSound">音線を表示</button></h4>
+    
+
+      <div class="how">
+        <h4>使い方</h4>
+        <h6>
+            1.壁の数を決めて「壁を作成」を押す<br>
+            2.音源（ピンクの〇）を動かす<br>
+            3.音量を決める<br>
+            4.「音線を表示」を押す<br>
+            5.音の向きと指向性を調節する<br>
+        </h6>
+      </div>
+    </div>
+  </div>
+  <script src="sound.js"></script>
+  </body>
+</html>
