@@ -21,7 +21,7 @@
 ## 使用技術
 - HTML
 - CSS
-- JavaSqript
+- JavaScript
 
 ## 役割
 - 個人制作
